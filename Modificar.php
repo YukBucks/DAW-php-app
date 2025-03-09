@@ -1,11 +1,23 @@
 <?php
+/**
+ * Clase Modificar para gestionar la modificación de productos.
+ * 
+ * @package Desplegament-web
+ * @author Yuk
+ * @version 1.0
+ */
 
 require_once('Connexio.php');
 require_once('Header.php');
 
 class Modificar {
 
-    // Método para mostrar el formulario de modificación del producto
+    /**
+     * Muestra el formulario de modificación del producto.
+     * 
+     * @param int $id ID del producto a modificar.
+     * @return void
+     */
     public function mostrarFormulari($id) {
         // Verifica si el ID del producto es válido
         if (!isset($id) || !is_numeric($id)) {

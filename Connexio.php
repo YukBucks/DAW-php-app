@@ -1,5 +1,12 @@
 <?php
-
+/**
+ * Clase creada para activ
+ * 
+ * Texto usada para comprobar funcionamiento de git.
+ * 
+ * @author Yuk 
+ * @version 1.0
+ */
 class Connexio {
     //Dades de la connexió a la base de dades la_meva_botiga.
     private $host = "localhost";
@@ -17,5 +24,4 @@ class Connexio {
         return $conexion;
     }
 }
-
 ?>
