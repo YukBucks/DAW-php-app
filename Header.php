@@ -1,8 +1,19 @@
 <?php
+/**
+ * Clase Header para gestionar el encabezado de la página.
+ * 
+ * @package Desplegament-web
+ * @author Yuk
+ * @version 1.0
+ */
 
 class Header {
     
-    // Método para mostrar el encabezado
+    /**
+     * Muestra el encabezado de la página.
+     * 
+     * @return void
+     */
     public function mostrarHeader() {
         // Imprime la estructura básica de un documento HTML con el encabezado y los estilos
         echo '<!DOCTYPE html>

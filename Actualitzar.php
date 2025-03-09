@@ -1,11 +1,27 @@
 <?php
+/**
+ * Clase Actualitzar para gestionar la actualización de productos.
+ * 
+ * @package Desplegament-web
+ * @author Yuk
+ * @version 1.0
+ */
 
 // Incluye el archivo de conexión
 require_once('Connexio.php');
 
 class Actualitzar {
     
-    // Método para actualizar un producto en la base de datos
+    /**
+     * Actualiza un producto en la base de datos.
+     * 
+     * @param int $id ID del producto.
+     * @param string $nom Nombre del producto.
+     * @param string $descripcio Descripción del producto.
+     * @param float $preu Precio del producto.
+     * @param int $categoria ID de la categoría del producto.
+     * @return void
+     */
     public function actualizar($id, $nom, $descripcio, $preu, $categoria) {
         // Verifica si todos los campos requeridos están presentes
         if (!isset($id) || !isset($nom) || !isset($descripcio) || !isset($preu) || !isset($categoria)) {

@@ -1,11 +1,22 @@
 <?php
+/**
+ * Clase Principal para gestionar la lista de productos.
+ * 
+ * @package Desplegament-web
+ * @author Yuk
+ * @version 1.0
+ */
 
 require_once('Connexio.php');
 require_once('Header.php');
 
 class Principal {
     
-    // Método para mostrar la lista de productos
+    /**
+     * Muestra la lista de productos.
+     * 
+     * @return void
+     */
     public function mostrarProductes() {
         // Obtiene la conexión a la base de datos
         $conexionObj = new Connexio();
