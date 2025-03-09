@@ -1,3 +1,3 @@
 <?php
-echo "php echo 'Canvi en main';";
+echo "Hola, aquest és 'Canvi en develop'";
 ?>
